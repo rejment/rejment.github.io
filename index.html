@@ -3,6 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 </head>
+<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 <style>
 	body {
 		background: #eee;
@@ -21,7 +22,9 @@
   zoom:1; /* For IE 6/7 (trigger hasLayout) */
 }	
 	
-	.card {
+	.card:active, .card:visited, .card {
+		outline: none;
+		display: block;
 		padding: 0;
 		background: white;
 		border-bottom: 1px solid black;
@@ -52,46 +55,87 @@
 		color: #888;	
 	}
 	
+	.wrapper {
+		max-width: 640px;
+		margin: 0 auto;
+	}
+	
+	.title {
+		font-family: 'Indie Flower', cursive;
+		font-size: 40px;
+		font-weight: bold;
+		text-align: center;
+		padding: 50px 20px;
+		background: #ddd;
+		text-shadow: white 0px 1px 0px;
+		color: #888;
+	}
+	
+	:target img {
+		width: 100%;
+	}
+	
 </style>
 <body>
 
+<div class="wrapper">
 
-<div class="card">
-	<img src="images/daniel.jpg">
-	<div class="details">
-		<h3>Daniel Rejment</h3>
-		<h5>R&D Manager</h5>
+	<div class="title">
+		rejment.se
 	</div>
-</div>
-<div class="card">
-	<img src="images/daniel.jpg">
-	<div class="details">
-		<h3>Daniel Rejment</h3>
-		<h5>R&D Manager</h5>
-	</div>
-</div>
-<div class="card">
-	<img src="images/daniel.jpg">
-	<div class="details">
-		<h3>Daniel Rejment</h3>
-		<h5>R&D Manager</h5>
-	</div>
-</div>
-<div class="card">
-	<img src="images/daniel.jpg">
-	<div class="details">
-		<h3>Daniel Rejment</h3>
-		<h5>R&D Manager</h5>
-	</div>
-</div>
-<div class="card">
-	<img src="images/daniel.jpg">
-	<div class="details">
-		<h3>Daniel Rejment</h3>
-		<h5>R&D Manager</h5>
-	</div>
-</div>
 
+
+
+<a class="card" href="#daniel" id="daniel">
+	<img src="images/daniel.jpg">
+	<div class="details">
+		<h3>Daniel Rejment</h3>
+		<h5>R&D Manager</h5>
+	</div>
+</a>
+<a class="card" href="#elvira" id="elvira">
+	<img src="images/daniel.jpg">
+	<div class="details">
+		<h3>Elvira Rejment</h3>
+		<h5>Student</h5>
+	</div>
+</a>
+<a class="card">
+	<img src="images/daniel.jpg">
+	<div class="details">
+		<h3>Daniel Rejment</h3>
+		<h5>R&D Manager</h5>
+	</div>
+</a>
+<a class="card">
+	<img src="images/daniel.jpg">
+	<div class="details">
+		<h3>Daniel Rejment</h3>
+		<h5>R&D Manager</h5>
+	</div>
+</a>
+<a class="card">
+	<img src="images/daniel.jpg">
+	<div class="details">
+		<h3>Daniel Rejment</h3>
+		<h5>R&D Manager</h5>
+	</div>
+</a>
+<a class="card">
+	<img src="images/daniel.jpg">
+	<div class="details">
+		<h3>Daniel Rejment</h3>
+		<h5>R&D Manager</h5>
+	</div>
+</a>
+<a class="card">
+	<img src="images/daniel.jpg">
+	<div class="details">
+		<h3>Daniel Rejment</h3>
+		<h5>R&D Manager</h5>
+	</div>
+</a>
+</div>
 
 </body>
 </html>
