@@ -110,6 +110,14 @@
 		text-align: center;
 	}
 	
+	.contact a[href=''] {
+		opacity: 0.1;
+	}
+	
+	.pad {
+		height: 50px;
+	}
+	
 </style>
 <body>
 
@@ -127,11 +135,11 @@
 		<h3>Daniel Rejment</h3>
 		<h5>R&D Manager</h5>
 		<div class="contact">
-<a href="https://twitter.com/rejment">
-<img src="images/email.png"></a><a href="https://twitter.com/rejment">
+<a href="mailto:daniel.rejment@tacton.com">
+<img src="images/email.png"></a><a href>
 <img src="images/facebook.png"></a><a href="https://twitter.com/rejment">
-<img src="images/twitter.png"></a><a href="https://twitter.com/rejment">
-<img src="images/linkedin.png"></a><a href="https://twitter.com/rejment">
+<img src="images/twitter.png"></a><a href="http://se.linkedin.com/pub/daniel-rejment/0/715/51b/">
+<img src="images/linkedin.png"></a><a href="http://instagram.com/drejment">
 <img src="images/instagram.png"></a>
 		</div>
 	</div>
@@ -142,29 +150,28 @@
 		<h3>Elvira Rejment</h3>
 		<h5>Student</h5>
 		<div class="contact">
-<a href="https://twitter.com/rejment">
-<img src="images/email.png"></a><a href="https://twitter.com/rejment">
-<img src="images/facebook.png"></a><a href="https://twitter.com/rejment">
-<img src="images/twitter.png"></a><a href="https://twitter.com/rejment">
-<img src="images/linkedin.png"></a><a href="https://twitter.com/rejment">
+<a href="mailto:elvira.rejment@gmail.com">
+<img src="images/email.png"></a><a href>
+<img src="images/facebook.png"></a><a href="https://twitter.com/falltealow">
+<img src="images/twitter.png"></a><a href>
+<img src="images/linkedin.png"></a><a href="http://instagram.com/erejment">
 <img src="images/instagram.png"></a>
 		</div>
 	</div>
 </div>
 
-<!--
-
-Instagram
-Twitter
-Facebook
-Youtube
-Linked-in
-Email
-
-
--->
+<div class="pad"></div>
 
 </div>
+<script>
+	var cards = document.querySelectorAll(".card");
+	for (var i = 0; i < cards.length; i++) {
+		var card = cards[i];
+		card.addEventListener("click", function(){
+			window.location.hash = this.id;
+		});
+	}
 
+</script>
 </body>
 </html>
