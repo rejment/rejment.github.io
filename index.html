@@ -4,10 +4,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 </head>
 <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:700italic' rel='stylesheet' type='text/css'>
 <style>
 	body {
 		background: #eee;
 		margin: 0;
+		font-family: 'Open Sans', sans-serif;
 	}
 
 .card:before,
@@ -41,14 +43,12 @@
 	}
 	
 	h3 {
-		font-family: 'freight-sans-pro','proxima-nova','Helvetica Neue',Arial,Helvetica,sans-serif;
 		font-size: 20px;
 		margin: 10px 0 0 10px;
 		color: #111;
 	}
 	
 	h5 {
-		font-family: 'freight-sans-pro','proxima-nova','Helvetica Neue',Arial,Helvetica,sans-serif;
 		font-size: 18px;
 		font-weight: normal;
 		margin: 0 0 0 10px;
@@ -61,18 +61,53 @@
 	}
 	
 	.title {
+		display: block;
 		font-family: 'Indie Flower', cursive;
 		font-size: 40px;
 		font-weight: bold;
 		text-align: center;
-		padding: 50px 20px;
+		padding: 100px 20px;
 		background: #ddd;
 		text-shadow: white 0px 1px 0px;
 		color: #888;
+		text-decoration: none;
 	}
 	
-	:target img {
+
+	:target img.face {
 		width: 100%;
+		float: none;
+	}
+	
+	.contact {
+		display: none;
+	}
+	:target .details {
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+	:target .contact {
+		display: block;
+		width: 80%;
+		margin: 0px auto;
+		padding: 10px 0 20px 0 ;
+	}
+	
+	:target h3 {
+		margin-top: 3px;
+	}
+	
+	.contact a {
+		width: 20%;		
+		margin: 0;
+		display: inline-block;
+	}
+
+	.contact img {
+		width: 70%;
+		margin: 0 auto;
+		text-align: center;
 	}
 	
 </style>
@@ -80,61 +115,55 @@
 
 <div class="wrapper">
 
-	<div class="title">
+	<a href="index.html" class="title">
 		rejment.se
-	</div>
+	</a>
 
 
 
-<a class="card" href="#daniel" id="daniel">
-	<img src="images/daniel.jpg">
+<div class="card" href="#daniel" id="daniel">
+	<img class="face" src="images/daniel.jpg">
 	<div class="details">
 		<h3>Daniel Rejment</h3>
 		<h5>R&D Manager</h5>
+		<div class="contact">
+<a href="https://twitter.com/rejment">
+<img src="images/email.png"></a><a href="https://twitter.com/rejment">
+<img src="images/facebook.png"></a><a href="https://twitter.com/rejment">
+<img src="images/twitter.png"></a><a href="https://twitter.com/rejment">
+<img src="images/linkedin.png"></a><a href="https://twitter.com/rejment">
+<img src="images/instagram.png"></a>
+		</div>
 	</div>
-</a>
-<a class="card" href="#elvira" id="elvira">
-	<img src="images/elvira.jpg">
+</div>
+<div class="card" href="#elvira" id="elvira">
+	<img class="face" src="images/elvira.jpg">
 	<div class="details">
 		<h3>Elvira Rejment</h3>
 		<h5>Student</h5>
+		<div class="contact">
+<a href="https://twitter.com/rejment">
+<img src="images/email.png"></a><a href="https://twitter.com/rejment">
+<img src="images/facebook.png"></a><a href="https://twitter.com/rejment">
+<img src="images/twitter.png"></a><a href="https://twitter.com/rejment">
+<img src="images/linkedin.png"></a><a href="https://twitter.com/rejment">
+<img src="images/instagram.png"></a>
+		</div>
 	</div>
-</a>
-<a class="card">
-	<img src="images/daniel.jpg">
-	<div class="details">
-		<h3>Daniel Rejment</h3>
-		<h5>R&D Manager</h5>
-	</div>
-</a>
-<a class="card">
-	<img src="images/daniel.jpg">
-	<div class="details">
-		<h3>Daniel Rejment</h3>
-		<h5>R&D Manager</h5>
-	</div>
-</a>
-<a class="card">
-	<img src="images/daniel.jpg">
-	<div class="details">
-		<h3>Daniel Rejment</h3>
-		<h5>R&D Manager</h5>
-	</div>
-</a>
-<a class="card">
-	<img src="images/daniel.jpg">
-	<div class="details">
-		<h3>Daniel Rejment</h3>
-		<h5>R&D Manager</h5>
-	</div>
-</a>
-<a class="card">
-	<img src="images/daniel.jpg">
-	<div class="details">
-		<h3>Daniel Rejment</h3>
-		<h5>R&D Manager</h5>
-	</div>
-</a>
+</div>
+
+<!--
+
+Instagram
+Twitter
+Facebook
+Youtube
+Linked-in
+Email
+
+
+-->
+
 </div>
 
 </body>
